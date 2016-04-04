@@ -5,17 +5,13 @@
  */
 package Vista;
 
+import java.awt.TextField;
+
 /**
  *
  * @author llasu
  */
 public class RegistroCurso extends javax.swing.JFrame {
-
-      public final static int CARNET = 1;
-
-    public final static int NOMBRE = 2;
-
-    public final static int CORREO = 3;
     
     /**
      * Creates new form RegistroCurso
@@ -23,6 +19,31 @@ public class RegistroCurso extends javax.swing.JFrame {
     public RegistroCurso() {
         initComponents();
     }
+
+    public TextField getCampoTNombre() {
+        return CampoTNombre;
+    }
+
+    public void setCampoTNombre(TextField CampoTNombre) {
+        this.CampoTNombre = CampoTNombre;
+    }
+
+    public TextField getCampoTSigla() {
+        return CampoTSigla;
+    }
+
+    public void setCampoTSigla(TextField CampoTSigla) {
+        this.CampoTSigla = CampoTSigla;
+    }
+
+    public TextField getTextField3() {
+        return textField3;
+    }
+
+    public void setTextField3(TextField textField3) {
+        this.textField3 = textField3;
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
