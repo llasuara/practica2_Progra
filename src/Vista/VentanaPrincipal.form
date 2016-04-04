@@ -49,12 +49,12 @@
             <Property name="text" type="java.lang.String" value="Cursos"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="jm_registro">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Registro de cursos "/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jm_registroActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>

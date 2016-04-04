@@ -5,6 +5,7 @@
  */
 package Controlador;
 
+import Modelo.BDCurso;
 import Modelo.Estudiante;
 import Modelo.BDEstudiante;
 import Vista.ConsultaEstudiantes;
@@ -26,12 +27,14 @@ public class ControlVentanaPrincipal implements ActionListener {
     private ReporteEstudiante reporte;
     private ConsultaEstudiantes consultaEstudiantes;
     private BDEstudiante db;
+    
+    private BDCurso bdCurso;
     private RegistroCurso registroCursos;
 
     public ControlVentanaPrincipal() {
 
         db = new BDEstudiante();
-
+        bdCurso = new BDCurso();
     }
 
     @Override
@@ -61,10 +64,11 @@ public class ControlVentanaPrincipal implements ActionListener {
                 consultaEstudiantes.show();
             }
         }
-        if(e.getActionCommand().equalsIgnoreCase("Registro cursos")){
+        if(e.getActionCommand().equalsIgnoreCase("Registro de cursos ")){
              //System.exit(0);
-           this.registroCursos = new RegistroCurso();
+           this.registroCursos = new RegistroCurso(bdCurso);
           registroCursos.show();
+          registroCursos.setVisible(true);
            
            
         }

@@ -6,6 +6,7 @@
 package Vista;
 
 import Controlador.ControladorMantenimientoEstudiate;
+import Controlador.ControladorRegistroCurso;
 
 /**
  *
@@ -39,6 +40,11 @@ public class BotonesCurso extends javax.swing.JPanel {
         BotonAgregar.setBackground(new java.awt.Color(0, 51, 255));
         BotonAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/agregar.png"))); // NOI18N
         BotonAgregar.setText("Agregar");
+        BotonAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonAgregarActionPerformed(evt);
+            }
+        });
 
         BotonBuscar.setBackground(new java.awt.Color(255, 255, 0));
         BotonBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/buscar.png"))); // NOI18N
@@ -86,8 +92,12 @@ public class BotonesCurso extends javax.swing.JPanel {
     private void BotonModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonModificarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonModificarActionPerformed
+
+    private void BotonAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAgregarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonAgregarActionPerformed
     
-    public void agregarEvento(ControladorMantenimientoEstudiate me){
+    public void agregarEvento(ControladorRegistroCurso me){
          this.BotonAgregar.addActionListener(me);
          this.BotonBuscar.addActionListener(me);
          this.BotonModificar.addActionListener(me);

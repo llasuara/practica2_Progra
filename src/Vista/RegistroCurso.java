@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import Controlador.ControladorRegistroCurso;
+import Modelo.BDCurso;
 import java.awt.TextField;
 
 /**
@@ -12,13 +14,16 @@ import java.awt.TextField;
  * @author llasu
  */
 public class RegistroCurso extends javax.swing.JFrame {
-    
+    private ControladorRegistroCurso controlador;
     /**
      * Creates new form RegistroCurso
      */
-    public RegistroCurso() {
+    public RegistroCurso(BDCurso bd) {
         initComponents();
+        controlador= new ControladorRegistroCurso(this,bd);
+        botonesCurso3.agregarEvento(controlador);
     }
+    
 
     public TextField getCampoTNombre() {
         return CampoTNombre;
@@ -42,6 +47,11 @@ public class RegistroCurso extends javax.swing.JFrame {
 
     public void setTextField3(TextField textField3) {
         this.textField3 = textField3;
+    }
+    public void limpiar() {
+        this.CampoTNombre.setText("");
+        this.CampoTSigla.setText("");
+        this.textField3.setText("");
     }
     
 

@@ -28,6 +28,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         this.jtManipulaEstudiante.addActionListener(cVentanaPrincipal);
         this.reporteEstudiantes.addActionListener(cVentanaPrincipal);
         this.consultaEstudiantes.addActionListener(cVentanaPrincipal);
+        this.jm_registro.addActionListener(cVentanaPrincipal);
     }
 
     /**
@@ -48,7 +49,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         reporteEstudiantes = new javax.swing.JMenuItem();
         consultaEstudiantes = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jm_registro = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,13 +83,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jMenu3.setText("Cursos");
 
-        jMenuItem1.setText("Registro de cursos ");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jm_registro.setText("Registro de cursos ");
+        jm_registro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jm_registroActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem1);
+        jMenu3.add(jm_registro);
 
         menuEstudiante.add(jMenu3);
 
@@ -118,9 +119,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSalirActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jm_registroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jm_registroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jm_registroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,7 +165,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jm_registro;
     private javax.swing.JMenuItem jtManipulaEstudiante;
     private javax.swing.JMenuBar menuEstudiante;
     private javax.swing.JMenuItem reporteEstudiantes;
